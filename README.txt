@@ -1,0 +1,1 @@
+Extract the ZIP and open index.html. All styling is embedded. Keep the CV PDF beside the HTML files.
