@@ -7,14 +7,7 @@
 
 
 /* Homepage final */
-.home-landing{
-  min-height:calc(100vh - 95px);
-  display:grid;
-  grid-template-columns:minmax(0,1.05fr) minmax(360px,.75fr);
-  gap:clamp(42px,6vw,84px);
-  align-items:start;
-  padding:clamp(54px,7vh,86px) 0;
-}
+.home-landing{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(380px,.85fr);gap:clamp(44px,6vw,86px);align-items:start;padding:clamp(54px,7vh,82px) 0 38px;}
 .home-copy{max-width:790px}
 .home-kicker{
   font-size:11px;
@@ -122,9 +115,40 @@
 
 
 
-@media(min-width:901px){
-  .home-photo{
-    transform:translateY(-56px);
-  }
+
+
+.home-explanation{
+  border-top:1px solid var(--line);
+  padding:54px 0 86px;
 }
-</style></head><body><div class="wrap"><header><a class="brand" href="index.html"><span class="logo"><span class="t-one">T</span><span class="t-two">T</span></span><span>Toby Tan-De Souza<small>PHILOSOPHY · EDUCATION · PUBLIC LIFE</small></span></a><nav><a class="active" href="index.html">Home</a><a class="" href="thinking.html">Thinking</a><a class="" href="about.html">About</a><a class="" href="teaching.html">Teaching</a><a class="" href="education.html">Education</a><a class="" href="photography.html">Observations</a><a class="" href="contact.html">Contact</a><a class="cv-nav" href="Toby_Tan-De_Souza_CV.pdf">CV</a></nav></header><main><section class="home-landing"><div class="home-copy"><div class="home-kicker">TOBY TAN-DE SOUZA · PHILOSOPHER · EDUCATOR · RESEARCHER</div><h1 class="home-question">What changed before you finished reading this sentence?</h1><p class="home-answer">The words never changed. If anything did, it must have been <strong>you.</strong></p><p class="home-context">Every word quietly revises the expectations through which you understand the next. If AI has already summarised this page, it has already decided what is worth keeping. Understanding, however, wasn't waiting at the end of the sentence. It was unfolding as you read.</p><p class="home-context home-trajectory">That insight has followed me from environmental philosophy to the philosophy of science, shaping both my metaphysics and my teaching. It continues to inform my work in education and artificial intelligence.</p><p class="home-welcome">Welcome.</p></div><div aria-label="Toby Tan-De Souza at Borobudur" class="home-photo" role="img"><span>Borobudur Temple, Central Java, Indonesia</span></div></section></main><footer><span>© 2026 Toby Tan-De Souza</span><span>South East Queensland, Australia</span></footer></div></body></html>
+.home-explanation-inner{
+  width:min(900px,100%);
+  margin:0 auto;
+}
+.home-explanation .home-answer{
+  max-width:none;
+  text-align:left;
+  margin-bottom:24px;
+}
+.home-explanation .home-context{
+  max-width:none;
+  text-align:left;
+}
+.home-explanation .home-trajectory{
+  margin-top:24px;
+}
+.home-explanation .home-welcome{
+  margin-top:30px;
+  text-align:center;
+  color:var(--blue);
+  font-size:clamp(28px,3vw,42px);
+}
+@media(max-width:900px){
+  .home-landing{
+    grid-template-columns:1fr;
+    padding-top:58px;
+  }
+  .home-photo{min-height:600px}
+  .home-explanation{padding-top:42px}
+}
+</style></head><body><div class="wrap"><header><a class="brand" href="index.html"><span class="logo"><span class="t-one">T</span><span class="t-two">T</span></span><span>Toby Tan-De Souza<small>PHILOSOPHY · EDUCATION · PUBLIC LIFE</small></span></a><nav><a class="active" href="index.html">Home</a><a class="" href="thinking.html">Thinking</a><a class="" href="about.html">About</a><a class="" href="teaching.html">Teaching</a><a class="" href="education.html">Education</a><a class="" href="photography.html">Observations</a><a class="" href="contact.html">Contact</a><a class="cv-nav" href="Toby_Tan-De_Souza_CV.pdf">CV</a></nav></header><main><section class="home-landing"><div class="home-copy"><div class="home-kicker">TOBY TAN-DE SOUZA · PHILOSOPHER · EDUCATOR · RESEARCHER</div><h1 class="home-question">What changed before you finished reading this sentence?</h1></div><div aria-label="Toby Tan-De Souza at Borobudur" class="home-photo" role="img"><span>Borobudur Temple, Central Java, Indonesia</span></div></section><section class="home-explanation"><div class="home-explanation-inner"><p class="home-answer">The words never changed. If anything did, it must have been <strong>you.</strong></p><p class="home-context">Every word quietly revises the expectations through which you understand the next. If AI has already summarised this page, it has already decided what is worth keeping. Understanding, however, wasn't waiting at the end of the sentence. It was unfolding as you read.</p><p class="home-context home-trajectory">That insight has followed me from environmental philosophy to the philosophy of science, shaping both my metaphysics and my teaching. It continues to inform my work in education and artificial intelligence.</p><p class="home-welcome">Welcome.</p></div></section></main><footer><span>© 2026 Toby Tan-De Souza</span><span>South East Queensland, Australia</span></footer></div></body></html>
